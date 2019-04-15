@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Expenses Tracker</string>
+    <string name="button_submit">Save Expense</string>
+    <string name="hint_amount">Enter Amount</string>
+    <string name="hint_category">Enter Category</string>
+    <string name="text_add_expense">New Expense Record</string>
+    <string name="button_view_record">Track Expenses</string>
+    <string name="label_all_record">Your Expense Record</string>
+    <string name="button_date" >Select A Date</string>
+    <string name="text_default_date">No Date Specified</string>
+    <string name="toast_empty_category">Category cannot be empty!</string>
+    <string name="toast_empty_date">Please specify a date!</string>
+    <string name="toast_empty_amount">Amount cannot be empty!</string>
+    <string name="image_description">Delete Button</string>
+    <string name="toast_invalid_amount">Amount value is invalid!</string>
+    <string name="toast_ok">Operation OK!</string>
+    <string name="toast_fail">Operation failed!</string>
+    <string name="radio_category">Category</string>
+    <string name="radio_date">Date</string>
+    <string name="radio_amount">Amount</string>
+    <string name="text_radioGroup">View by</string>
+    <string name="menu_search">Search</string>
+    <string name="hint_search">Say \"OK Google\"</string>
+</resources>
