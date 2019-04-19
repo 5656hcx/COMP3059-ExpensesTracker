@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
     private final static String KEY_TIME_TEXT = "time_text";
     private TextView textView_date;
     private Toast toast;
-    private static long timeStamp = -1;
+    private static long timeStamp;
 
     @SuppressLint("ShowToast")
     @Override
@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         // keep only one instance of Toast
         textView_date = findViewById(R.id.text_date);
         toast = Toast.makeText(this, null, Toast.LENGTH_SHORT);
+        if (savedInstanceState == null) timeStamp = -1;
     }
 
     @Override

@@ -140,7 +140,7 @@ public class TrackerActivity extends AppCompatActivity {
             public boolean onQueryTextChange(String newText) {
                 searchQuery = newText;
                 mySelection = MyContract.CATEGORY + " LIKE ? OR " + MyContract.AMOUNT + " LIKE ?";
-                mySelectionArgs = new String[] { newText + "%", newText + "%" };
+                mySelectionArgs = new String[] { "%" + newText + "%", "%" + newText + "%" };
                 updateList();
                 return true;
             }
@@ -166,7 +166,7 @@ public class TrackerActivity extends AppCompatActivity {
         // also add a delete action to every list item
         private Calendar calendar;
 
-        public MyCursorAdapter(Context context, int layout, Cursor c, String[] from, int[] to) {
+        MyCursorAdapter(Context context, int layout, Cursor c, String[] from, int[] to) {
             super(context, layout, c, from, to, 0);
             this.calendar = Calendar.getInstance();
         }
@@ -178,7 +178,7 @@ public class TrackerActivity extends AppCompatActivity {
             // milliseconds to formatted date text
             calendar.setTimeInMillis(cursor.getLong(cursor.getColumnIndex(MyContract.DATE)));
             TextView textView = view.findViewById(R.id.list_item_date);
-            textView.setText(new SimpleDateFormat("EEE MMM dd yyyy").format(calendar.getTime()));
+            textView.setText(new SimpleDateFormat("EEE MM/dd/yyyy").format(calendar.getTime()));
 
             // set up delete operation for every button
             // associate a unique id to button to delete certain row

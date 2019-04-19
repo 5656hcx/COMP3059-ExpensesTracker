@@ -9,8 +9,9 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
         android:contentDescription="@string/image_description"
         app:srcCompat="@android:drawable/ic_menu_delete" />
 
@@ -19,7 +20,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:gravity="start|center_vertical"
+        android:gravity="center_vertical"
         tools:text="DATE" />
 
     <TextView
@@ -27,7 +28,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:gravity="start|center_vertical"
+        android:gravity="center_vertical"
         tools:text="CATEGORY" />
 
     <TextView
@@ -35,7 +36,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:gravity="start|center_vertical"
+        android:gravity="center_vertical"
         tools:text="AMOUNT" />
 
 </LinearLayout>
